@@ -1,13 +1,16 @@
 "use client"
 
+
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { motion } from "framer-motion"
 import { Menu, X, Phone, Mail } from "lucide-react"
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,7 +60,17 @@ export default function Header() {
               <span className="text-xl font-bold">FA</span>
             </div>
             <div>
-              <h1 className={`text-xl font-bold transition-colors ${isScrolled ? "text-gray-900" : "text-white"}`}>
+              <h1
+                className={`text-xl font-bold transition-colors ${
+                  pathname === "/"
+                    ? isScrolled
+                      ? "text-gray-900"
+                      : "text-white"
+                    : isScrolled
+                    ? "text-gray-900"
+                    : "text-black"
+                }`}
+              >
                 Freelance Axis
               </h1>
               <p className={`text-sm transition-colors ${isScrolled ? "text-gray-600" : "text-amber-100"}`}>
@@ -72,17 +85,30 @@ export default function Header() {
               { href: "/", label: "Home" },
               { href: "/rooms", label: "Rooms & Services" },
               { href: "/contact", label: "Contact" },
-            ].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`font-medium transition-colors hover:text-amber-600 ${
-                  isScrolled ? "text-gray-900" : "text-white"
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
+            ].map((item) => {
+              // Home page: keep as is
+              if (pathname === "/") {
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`font-medium transition-colors hover:text-amber-600 ${isScrolled ? "text-gray-900" : "text-white"}`}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              }
+              // Other pages: always dark text for visibility
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="font-medium transition-colors hover:text-amber-600 text-gray-900"
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Mobile Menu Button */}
