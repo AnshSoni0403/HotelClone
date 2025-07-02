@@ -18,7 +18,7 @@ export default function HomePage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/placeholder.svg?height=1080&width=1920')`,
+              backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/img/1.jpg')`,
             }}
           />
 
@@ -154,11 +154,11 @@ export default function HomePage() {
             <ScrollAnimation className="mb-16">
               <ImageSlider
                 images={[
-                  "/placeholder.svg?height=500&width=800",
-                  "/placeholder.svg?height=500&width=800",
-                  "/placeholder.svg?height=500&width=800",
-                  "/placeholder.svg?height=500&width=800",
-                  "/placeholder.svg?height=500&width=800",
+                  "/img/2.jpg?height=500&width=800",
+                  "/img/4.jpg?height=500&width=800",
+                  "/img/5.jpg?height=500&width=800",
+                  "/img/6.jpg?height=500&width=800",
+                  "/img/7.jpg?height=500&width=800",
                 ]}
                 autoPlay={true}
                 interval={5000}
@@ -172,7 +172,7 @@ export default function HomePage() {
                 <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <div className="h-64 bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
                     <img
-                      src="/placeholder.svg?height=300&width=400"
+                      src="/img/8.jpg?height=300&width=400"
                       alt="Luxury Room"
                       className="w-full h-full object-cover"
                     />
@@ -198,7 +198,7 @@ export default function HomePage() {
                 <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <div className="h-64 bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
                     <img
-                      src="/placeholder.svg?height=300&width=400"
+                      src="/img/9.jpg?height=300&width=400"
                       alt="Fine Dining"
                       className="w-full h-full object-cover"
                     />
@@ -221,7 +221,7 @@ export default function HomePage() {
                 <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <div className="h-64 bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
                     <img
-                      src="/placeholder.svg?height=300&width=400"
+                      src="/img/10.jpg?height=300&width=400"
                       alt="Hotel Amenities"
                       className="w-full h-full object-cover"
                     />

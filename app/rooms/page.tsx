@@ -9,8 +9,8 @@ export default function RoomsPage() {
   const roomTypes = [
     {
       name: "Standard Room",
-      price: "$199",
-      image: "/placeholder.svg?height=400&width=600",
+      price: "Rs20,000",
+      image: "/img/17.jpg?height=400&width=600",
       features: ["King Size Bed", "City View", "Free Wi-Fi", "Mini Bar", "Air Conditioning"],
       amenities: [Bed, Wifi, Tv, Coffee],
       description:
@@ -18,7 +18,7 @@ export default function RoomsPage() {
     },
     {
       name: "Deluxe Suite",
-      price: "$349",
+      price: "Rs25,000",
       image: "/placeholder.svg?height=400&width=600",
       features: ["Separate Living Area", "Ocean View", "Premium Amenities", "Room Service", "Balcony"],
       amenities: [Bed, Wifi, Tv, Coffee, Bath],
@@ -27,7 +27,7 @@ export default function RoomsPage() {
     },
     {
       name: "Presidential Suite",
-      price: "$799",
+      price: "Rs.40,000",
       image: "/placeholder.svg?height=400&width=600",
       features: ["2 Bedrooms", "Private Terrace", "Butler Service", "Jacuzzi", "Dining Area"],
       amenities: [Bed, Wifi, Tv, Coffee, Bath, Users],
@@ -117,9 +117,9 @@ export default function RoomsPage() {
                     <div className="relative">
                       <ImageSlider
                         images={[
-                          "/placeholder.svg?height=400&width=600",
-                          "/placeholder.svg?height=400&width=600",
-                          "/placeholder.svg?height=400&width=600",
+                          "img/17.jpg?height=400&width=600",
+                          "img/18.jpg?height=400&width=600",
+                          "/img/19.jpg?height=400&width=600",
                         ]}
                         autoPlay={true}
                         interval={4000}

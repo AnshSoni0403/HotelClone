@@ -19,7 +19,7 @@ const indianLocations: LocationCard[] = [
   {
     name: "Goa",
     state: "Goa",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/img/11.jpg?height=300&width=400",
     rating: 4.8,
     description:
       "Golden beaches, Portuguese heritage, and vibrant nightlife make Goa India's premier beach destination.",
@@ -30,7 +30,7 @@ const indianLocations: LocationCard[] = [
   {
     name: "Udaipur",
     state: "Rajasthan",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/img/12.jpg?height=300&width=400",
     rating: 4.9,
     description: "The City of Lakes offers royal palaces, stunning architecture, and romantic boat rides.",
     attractions: ["City Palace", "Lake Pichola", "Jag Mandir", "Saheliyon Ki Bari"],
@@ -40,7 +40,7 @@ const indianLocations: LocationCard[] = [
   {
     name: "Munnar",
     state: "Kerala",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/img/13.jpg?height=300&width=400",
     rating: 4.7,
     description: "Rolling tea gardens, misty mountains, and cool climate create a perfect hill station retreat.",
     attractions: ["Tea Gardens", "Eravikulam National Park", "Mattupetty Dam", "Top Station"],
@@ -50,7 +50,7 @@ const indianLocations: LocationCard[] = [
   {
     name: "Rishikesh",
     state: "Uttarakhand",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/img/14.jpg?height=300&width=400",
     rating: 4.6,
     description: "Spiritual capital offering yoga retreats, adventure sports, and Ganges river experiences.",
     attractions: ["Laxman Jhula", "Beatles Ashram", "River Rafting", "Triveni Ghat"],
@@ -60,7 +60,7 @@ const indianLocations: LocationCard[] = [
   {
     name: "Shimla",
     state: "Himachal Pradesh",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/img/15.jpg?height=300&width=400",
     rating: 4.5,
     description: "Colonial charm meets mountain beauty in this popular hill station with scenic toy train rides.",
     attractions: ["Mall Road", "Jakhu Temple", "Christ Church", "Toy Train"],
@@ -70,7 +70,7 @@ const indianLocations: LocationCard[] = [
   {
     name: "Jaipur",
     state: "Rajasthan",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/img/16.jpg?height=300&width=400",
     rating: 4.8,
     description: "The Pink City showcases magnificent forts, palaces, and vibrant markets steeped in royal history.",
     attractions: ["Hawa Mahal", "Amber Fort", "City Palace", "Jantar Mantar"],
