@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-amber-900 text-white py-2 px-4 text-sm">
+      {/* <div className="bg-amber-900 text-white py-2 px-4 text-sm">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
@@ -39,7 +39,7 @@ export default function Header() {
             <span>Welcome to Freelance Axis Grand Hotel</span>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Header */}
       <motion.header

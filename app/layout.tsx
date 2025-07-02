@@ -21,6 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/x-icon" href="img/logo.ico" />
+        <link rel="icon" type="image/jpeg" href="img/logo.jpeg" />
+      </head>
       <body className={inter.className}>
         <Header />
         <main>{children}</main>
